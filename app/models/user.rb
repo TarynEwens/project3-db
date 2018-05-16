@@ -17,6 +17,30 @@
 #
 
 class User < ApplicationRecord
+  attr_accessor :remember_token
+  before_save { self.email = email.downcase }
+  validates :username,  presence: true, length: { maximum: 50 }
+  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+  validates :email, presence: true, length: { maximum: 255 },
+                    format: { with: VALID_EMAIL_REGEX },
+                    uniqueness: { case_sensitive: false }
   has_secure_password
+  validates :password, presence: true
+
+  has_and_belongs_to_many :items
   has_many :pets
+
+
+  def self.from_token_payload payload
+    payload["sub"]
+  end
+
+  def to_token_payload
+    {
+      sub: id,
+      email: email,
+      admin: admin
+    }
+  end
+  
 end

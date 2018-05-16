@@ -16,4 +16,9 @@
 
 class Pet < ApplicationRecord
   belongs_to :user
+
+  validates :hunger, :inclusion => { :in => 0..30 }
+  validates :happiness, :inclusion => { :in => 0..30 }
+  validates :energy, :inclusion => { :in => 0..30 }
+  validates :fun, :inclusion => { :in => 0..30 }
 end
