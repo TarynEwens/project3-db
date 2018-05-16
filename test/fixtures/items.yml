@@ -1,0 +1,26 @@
+# == Schema Information
+#
+# Table name: items
+#
+#  id         :integer          not null, primary key
+#  action     :text
+#  name       :text
+#  image      :text
+#  price      :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  action: MyText
+  name: MyText
+  image: MyText
+  price: 1
+
+two:
+  action: MyText
+  name: MyText
+  image: MyText
+  price: 1

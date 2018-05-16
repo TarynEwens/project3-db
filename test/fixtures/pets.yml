@@ -1,0 +1,35 @@
+# == Schema Information
+#
+# Table name: pets
+#
+#  id         :integer          not null, primary key
+#  species    :text
+#  name       :text
+#  hunger     :integer
+#  happiness  :integer
+#  energy     :integer
+#  fun        :integer
+#  user_id    :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  species: MyText
+  name: MyText
+  hunger: 1
+  happiness: 1
+  energy: 1
+  fun: 1
+  user_id: 1
+
+two:
+  species: MyText
+  name: MyText
+  hunger: 1
+  happiness: 1
+  energy: 1
+  fun: 1
+  user_id: 1
