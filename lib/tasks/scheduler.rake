@@ -1,6 +1,6 @@
 desc "This task is called by the Heroku scheduler add-on"
 task :update_feed => :environment do
-  user = User[1]
-  user.update :energy => user.energy - 1
-  puts user.energy
+  pet = Pet.first
+  pet.energy = pet.energy - 1
+  puts pet.energy
 end
