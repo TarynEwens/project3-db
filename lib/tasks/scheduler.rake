@@ -3,4 +3,5 @@ task :update_feed => :environment do
   pet = Pet.first
   pet.energy = pet.energy - 1
   puts pet.energy
+  pet.save
 end
