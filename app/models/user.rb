@@ -25,7 +25,6 @@ class User < ApplicationRecord
                     format: { with: VALID_EMAIL_REGEX },
                     uniqueness: { case_sensitive: false }
   has_secure_password
-  validates :password, presence: true
 
   has_and_belongs_to_many :items
   has_many :pets
@@ -42,5 +41,5 @@ class User < ApplicationRecord
       admin: admin
     }
   end
-  
+
 end
