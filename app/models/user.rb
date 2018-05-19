@@ -26,7 +26,6 @@ class User < ApplicationRecord
                     uniqueness: { case_sensitive: false }
   has_secure_password
 
-  has_and_belongs_to_many :items
   has_many :pets
 
 
