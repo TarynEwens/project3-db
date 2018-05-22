@@ -1,24 +1,6 @@
-# README
+# CheesePets Database
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Ruby on Rails back end for this project:
+https://github.com/tarynelise/project3-client
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Please see that README for more details.
